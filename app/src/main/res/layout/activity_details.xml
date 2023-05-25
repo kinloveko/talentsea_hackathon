@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".details_activity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="3dp"
+        android:paddingBottom="5dp"
+        tools:context=".loginAndRegistration.container_fragment_registration_users"
+        tools:ignore="ExtraText,ScrollViewSize,UselessLeaf">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="Company Details"
+            android:textAlignment="center"
+            android:textColor="@color/material_blue_grey_80"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/backLayoutService"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="InefficientWeight,MissingConstraints,RtlSymmetry">
+
+            <ImageView
+                android:id="@+id/shop_edit_backArrowImage"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/back"
+                android:tint="@color/material_blue_grey_80"
+                tools:ignore="ContentDescription,NestedWeights,UseAppTint"
+                tools:layout_editor_absoluteX="339dp"
+                tools:layout_editor_absoluteY="122dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarID">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/lightWhite"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+            <ImageView
+
+                android:id="@+id/userImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_noimage" />
+            <RelativeLayout
+                android:elevation="3dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/details_shooter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Company name"
+                    android:textColor="@color/material_blue_grey_90"
+                    android:textSize="17sp"
+                    android:translationZ="3dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/details_service_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_shooter_name"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:ellipsize="end"
+                    android:text="Dog Shooter"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/peso"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/details_service_type"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="-4dp"
+                    android:src="@drawable/icon_peso"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/details_shooter_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_service_type"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="-7dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/peso"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppinsemibold"
+                    android:text="10000"
+                    android:textColor="@color/material_blue_grey_80"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Job Description"
+
+                    android:textColor="@color/material_blue_grey_80"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/details_pet_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:textColor="@color/material_blue_grey_80"
+                    android:fontFamily="@font/poppinslight"
+                    android:text="There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.."
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/seeMore"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/brownish"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="See more . . ."
+                    tools:ignore="HardcodedText" />
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/style_border"/>
+
+                <RelativeLayout
+
+                    android:id="@+id/details_moredetails_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Address"
+
+                        android:textSize="12sp"
+
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/details_service_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/address"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Cebu City"
+                        android:textAlignment="center"
+                        android:textColor="@color/material_blue_grey_80"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/availability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/details_service_address"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Availability"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/details_service_availability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/details_service_address"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_toEndOf="@id/availability"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Availability"
+                        android:textAlignment="center"
+                        android:textColor="@color/material_blue_grey_80"
+                        android:textSize="12sp"
+
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/color1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/details_service_availability"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Available"
+
+                        android:textSize="12sp"
+
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/details_service_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/details_service_availability"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/color1"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Schedule"
+                        android:textAlignment="center"
+                        android:textColor="@color/material_blue_grey_80"
+                        android:textSize="12sp"
+
+                        tools:ignore="HardcodedText" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/style_border"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/details_button_hireNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dropshadow_two"
+        android:backgroundTint="@color/material_blue_grey_80"
+        android:text="Message"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

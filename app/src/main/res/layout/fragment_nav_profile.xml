@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activities.Navigations.nav_profile_fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbarID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="3dp"
+            android:paddingBottom="5dp"
+            tools:context=".loginAndRegistration.container_fragment_registration_users"
+            tools:ignore="ExtraText,ScrollViewSize,UselessLeaf">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icon_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/backLayoutService"
+                android:fontFamily="@font/poppinsemibold"
+                android:text="Profile"
+                android:textColor="@color/material_blue_grey_80"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:id="@+id/backLayoutService"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="InefficientWeight,MissingConstraints,RtlSymmetry">
+
+                <ImageView
+                    android:id="@+id/shop_edit_backArrowImage"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/back"
+                    android:tint="@color/material_blue_grey_80"
+                    tools:ignore="ContentDescription,NestedWeights,UseAppTint"
+                    tools:layout_editor_absoluteX="339dp"
+                    tools:layout_editor_absoluteY="122dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbarID"
+            android:background="#FAFAFA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+
+                    app:cardCornerRadius="300dp"
+                    tools:ignore="MissingConstraints">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:contentDescription="Profile"
+                        android:src="@drawable/icon_noimage"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/editIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-20dp"
+                    android:backgroundTint="@color/semiBlack"
+                    app:cardCornerRadius="30dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_profile_edit" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Juan Dela Cruz"
+                    android:textColor="@color/material_blue_grey_80"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-5dp"
+                    android:textSize="12sp"
+                    android:text="example@gmail.com"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppinsemibold"
+                    android:text="General Settings"
+                    android:textColor="@color/material_blue_grey_80"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <RelativeLayout
+                    android:id="@+id/first_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/dropshadow_two"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/icon_settings" />
+
+                    <TextView
+                        android:id="@+id/pet_text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/image6"
+                        android:fontFamily="@font/poppinsemibold"
+                        android:text="Account Settings"
+                        android:textColor="@color/material_blue_grey_90"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow6"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/profile_arrowright" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/report_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/dropshadow_two"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/icon_report" />
+
+                    <TextView
+                        android:id="@+id/pet_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/image2"
+                        android:fontFamily="@font/poppinsemibold"
+                        android:text="Report"
+                        android:textColor="@color/material_blue_grey_90"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow2"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/profile_arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/about_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/dropshadow_two"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/prof_about" />
+
+                    <TextView
+                        android:id="@+id/pet_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/image1"
+                        android:fontFamily="@font/poppinsemibold"
+                        android:text="About"
+                        android:textColor="@color/material_blue_grey_90"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow1"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/profile_arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/logout_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/dropshadow_two"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/profile_logouticon" />
+
+                    <TextView
+                        android:id="@+id/pet_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/image3"
+                        android:fontFamily="@font/poppinsemibold"
+                        android:text="Logout"
+                        android:textColor="@color/material_blue_grey_90"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+
+                    <ImageView
+                        android:id="@+id/imageViewArrow3"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/profile_arrowright" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

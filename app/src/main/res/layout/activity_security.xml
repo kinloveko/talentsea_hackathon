@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Settings.SecuritySettings">
+
+    <RelativeLayout
+        android:id="@+id/toolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="3dp"
+        android:paddingBottom="5dp"
+        tools:context=".loginAndRegistration.container_fragment_registration_users"
+        tools:ignore="ExtraText,ScrollViewSize,UselessLeaf">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="Security Settings"
+            android:textAlignment="center"
+            android:textColor="@color/material_blue_grey_80"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/backLayoutService"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="InefficientWeight,MissingConstraints,RtlSymmetry">
+
+            <ImageView
+                android:id="@+id/shop_edit_backArrowImage"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/back"
+                android:tint="@color/material_blue_grey_80"
+                tools:ignore="ContentDescription,NestedWeights,UseAppTint"
+                tools:layout_editor_absoluteX="339dp"
+                tools:layout_editor_absoluteY="122dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/toolbarID"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/dropshadow_two"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_email"
+            android:tint="@color/material_blue_grey_80"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/pet_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/image2"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="Email"
+            android:textColor="@color/material_blue_grey_90"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/nameUpdate"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@+id/imageViewArrow2"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppinsemibold"
+            android:maxLines="1"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageViewArrow2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profile_arrowright" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/email_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/dropshadow_two"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/icon_lock"
+            android:tint="@color/material_blue_grey_80"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/pet_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/image1"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="Password"
+            android:textColor="@color/material_blue_grey_90"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/passwordUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@+id/imageViewArrow1"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="password"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageViewArrow1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profile_arrowright" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/password_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/dropshadow_two"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_phone"
+            android:tint="@color/material_blue_grey_80"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/pet_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/image4"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="Phone number"
+            android:textColor="@color/material_blue_grey_90"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/phoneUpdate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@+id/imageViewArrow4"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppinsemibold"
+            android:maxLines="1"
+            android:text="Set phone number"
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageViewArrow4"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profile_arrowright" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/phone_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/dropshadow_two"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/icon_info"
+            android:tint="@color/semiRed"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/pet_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/image3"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="Delete account"
+            android:textColor="@color/material_blue_grey_90"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageView
+            android:id="@+id/imageViewArrow3"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profile_arrowright" />
+    </RelativeLayout>
+</RelativeLayout>

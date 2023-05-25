@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Navigations.nav_home_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="3dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/nav_home"
+                android:tint="@color/material_blue_grey_80"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/logoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toEndOf="@id/imageView"
+                android:fontFamily="@font/poppinsemibold"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="@color/material_blue_grey_80"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/searchcarddView"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toStartOf="@id/addPetView"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="300dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/billingImage2"
+                    android:layout_width="20dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Profile"
+                    android:src="@drawable/ic_baseline_message_24"
+                    android:tint="@color/material_blue_grey_80"
+                    app:civ_border_color="@color/mustard"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="HardcodedText,UseAppTint" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/addPetView"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toStartOf="@id/cardView"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="300dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/messageImage2"
+                    android:layout_width="26dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Message"
+                    android:src="@drawable/icon_search"
+                    app:civ_border_color="@color/mustard"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="300dp"
+                tools:ignore="MissingConstraints">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="Profile"
+
+                    android:src="@drawable/icon_noimage"
+                    tools:ignore="HardcodedText,UseAppTint" />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textWarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_platteYellow"
+            android:ellipsize="marquee"
+            android:scrollbars="none"
+            android:singleLine="true"
+            android:text="To access our app's full functionality please complete your info. Click here to redirect!"
+            android:textColor="@color/material_blue_grey_80"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</FrameLayout>

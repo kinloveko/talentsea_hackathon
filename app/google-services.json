@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "255637893141",
+    "project_id": "mock-defense-85ee8",
+    "storage_bucket": "mock-defense-85ee8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255637893141:android:47f5c45a59baf7769b9e1c",
+        "android_client_info": {
+          "package_name": "com.example.ict_congress_mock_defense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255637893141-fvuferg73ldfkihdpg7q8bfg1tggf5bu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2RvnTi49H5X7kOgGSzpE2_phcJX8Jj6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255637893141-fvuferg73ldfkihdpg7q8bfg1tggf5bu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
