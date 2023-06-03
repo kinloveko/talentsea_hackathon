@@ -4,34 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/dropshadow_background"
     tools:context=".LoginAndRegistration.Login"
     tools:ignore="ExtraText">
 
     <RelativeLayout
+        android:layout_marginEnd="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/material_blue_grey_80"
-        android:gravity="center"
+       android:gravity="center"
         tools:context=".loginAndRegistration.container_fragment_registration_users"
         tools:ignore="ExtraText,ScrollViewSize,UselessLeaf">
 
         <ImageView
             android:id="@+id/logo"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="130dp"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="50dp"
-            android:src="@drawable/logo"
-            android:tint="@color/white"
+            android:src="@drawable/logo_hive"
             tools:ignore="UseAppTint" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="-80dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Empowering business thru Technology"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
 
         <LinearLayout
             android:id="@+id/child1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/logo"
-            android:background="@drawable/dropshadow_seven"
+            android:background="@drawable/dropshadow"
+            android:backgroundTint="@color/semiGrey"
+            android:elevation="3dp"
             android:gravity="center"
             android:orientation="vertical"
             tools:ignore="UselessParent">
@@ -43,20 +55,18 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/poppinsmedium"
+                android:fontFamily="sans-serif-condensed"
                 android:text="LOGIN"
                 android:textColor="@color/material_blue_grey_80"
                 android:textSize="28dp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
 
-            //Username TextView -- START
-            //=================================================================
-
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="-10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif-condensed-light"
                 android:text="Sign in to continue."
@@ -90,11 +100,6 @@
                     app:startIconDrawable="@drawable/ic_email"
                     tools:layout_editor_absoluteX="0dp" />
             </com.google.android.material.textfield.TextInputLayout>
-            //=================================================================
-            //email TextView --- END
-
-            //Password TextView -- START
-            //=================================================================
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password_layout"
@@ -124,30 +129,21 @@
                     android:singleLine="true"
                     tools:ignore="MissingConstraints,RtlHardcoded" />
             </com.google.android.material.textfield.TextInputLayout>
-            //=================================================================
-            //Password TextView --- END
-            // Forgot Password
 
             <Button
                 android:id="@+id/forgot"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginStart="17dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="17dp"
-                android:background="#00000000"
-                android:elevation="0dp"
-                android:fontFamily="@font/moresugar_regular"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/float_transparent"
+                android:fontFamily="sans-serif-black"
                 android:paddingBottom="3dp"
-                android:shadowColor="@color/black"
-                android:shadowDy="1"
-                android:shadowRadius="1"
                 android:text="Forget Password?"
-                android:textAlignment="textEnd"
                 android:textAllCaps="false"
-                android:textColor="@color/material_blue_grey_90"
-                android:textSize="18sp"
+                android:textColor="@color/brown"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText,MissingConstraints,RtlCompat,RtlHardcoded" />
             // login button
 
@@ -156,31 +152,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="60dp"
                 android:layout_marginTop="0dp"
-                android:layout_marginEnd="50dp"
-                android:background="@drawable/stlye_border_relative_three"
-                android:backgroundTint="@color/material_blue_grey_80"
-                android:fontFamily="@font/moresugar_thin"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/dropshadow_button_completed"
+                android:fontFamily="@font/poppinsemibold"
                 android:text="Login"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 tools:ignore="HardcodedText,MissingClass,UsingOnClickInXml" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/poppinsregular"
-                android:paddingTop="4dp"
-                android:text="Don't have an account?"
-                android:textAlignment="center"
-                android:textColor="@color/cardview_dark_background"
-                android:textSize="16sp"
-                tools:ignore="HardcodedText,MissingConstraints" />
-            //Register
 
             <Button
                 android:id="@+id/register"
@@ -189,16 +169,12 @@
                 android:layout_gravity="center"
                 android:background="#00000000"
                 android:capitalize="none"
-                android:fontFamily="@font/poppinsmedium"
-                android:shadowColor="@color/black"
-                android:shadowDy="1"
-                android:shadowRadius="1"
-                android:text="Click Here"
+                android:fontFamily="sans-serif-black"
+                android:text="Don't have an account? Sign up"
                 android:textAllCaps="false"
-                android:textColor="@color/material_blue_grey_80"
-                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
                 tools:ignore="Deprecated,HardcodedText,MissingConstraints,RtlHardcoded,TextViewEdits,UsingOnClickInXml" />
-
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

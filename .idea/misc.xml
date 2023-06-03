@@ -24,6 +24,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/drawable/dialog_skills_set_borders.xml" value="0.152" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/drawable/dot_background.xml" value="0.1285" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/drawable/dropshadow.xml" value="0.121" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/drawable/dropshadow_background.xml" value="0.2545" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/drawable/dropshadow_button_cancelled.xml" value="0.1585" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/drawable/dropshadow_button_five.xml" value="0.1585" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/drawable/dropshadow_button_opposite.xml" value="0.1585" />
@@ -58,6 +59,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/layout/dialog_email_verify.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/layout/dialog_job_skills.xml" value="0.4" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/layout/dialog_job_skills_set.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/layout/dialog_name.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/layout/dialog_password.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/layout/dialog_password_set.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ICT_CONGRESS_MOCK_DEFENSE/app/src/main/res/layout/employee_layout.xml" value="0.4" />

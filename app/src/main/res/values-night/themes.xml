@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ICT_CONGRESS_MOCK_DEFENSE" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+    <style name="Theme.ICT_CONGRESS_MOCK_DEFENSE" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/material_blue_grey_80</item>
         <item name="colorPrimaryVariant">@color/material_blue_grey_80</item>
